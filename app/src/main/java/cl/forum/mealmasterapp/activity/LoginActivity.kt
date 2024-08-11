@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -23,7 +24,10 @@ class LoginActivity : AppCompatActivity() {
         val passwordEditText = findViewById<EditText>(R.id.editTextTextPassword)
         val loginButton = findViewById<Button>(R.id.button)
 
-        loginButton.setOnClickListener{
+        val forgotPassword = findViewById<TextView>(R.id.forgotPasswordText)
+
+
+        loginButton.setOnClickListener {
 
             val username = usernameEditText.text.toString()
             val password = passwordEditText.text.toString()
@@ -34,13 +38,13 @@ class LoginActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "Usuario o contraseña incorrecta", Toast.LENGTH_SHORT).show()
             }
-
         }
 
 
-
-
-
+        forgotPassword.setOnClickListener {
+            val intent = Intent(this, ForgotPasswordActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }
