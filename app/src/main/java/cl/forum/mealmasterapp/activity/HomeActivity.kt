@@ -1,11 +1,9 @@
-package cl.forum.mealmasterapp
+package cl.forum.mealmasterapp.activity
 
 import android.os.Bundle
-import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import cl.forum.mealmasterapp.R
 
 class HomeActivity : AppCompatActivity() {
 
