@@ -17,7 +17,7 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
 
         val recipes = listOf(
-            Recipe("Ensalada de Quinoa", "Una ensalada fresca y nutritiva con vegetales y semillas.", R.drawable.ic_launcher_foreground),
+            Recipe("Ensalada de Quinoa", "Una ensalada fresca y nutritiva con vegetales y semillas.", R.drawable.facebook),
             Recipe("Pechuga de Pollo al Limón", "Pollo al horno con hierbas y limón.", R.drawable.ic_launcher_foreground),
             Recipe("Salmón a la Plancha", "Salmón con guarnición de vegetales y salsa de soja.", R.drawable.ic_launcher_foreground),
             Recipe("Tacos de Pescado", "Tacos saludables con pescado y salsa de aguacate.", R.drawable.ic_launcher_foreground),
@@ -29,8 +29,6 @@ class HomeActivity : AppCompatActivity() {
             Recipe("Brownies de Chocolate", "Brownies esponjosos con trozos de nuez y chocolate.", R.drawable.ic_launcher_foreground)
         )
 
-
-        // Configurar la RecyclerView
         val recyclerView = findViewById<RecyclerView>(R.id.recipesRecyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = RecipeAdapter(recipes)

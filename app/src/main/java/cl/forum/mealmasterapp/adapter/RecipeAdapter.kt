@@ -20,8 +20,8 @@ class RecipeAdapter(private val recipes: List<Recipe>) : RecyclerView.Adapter<Re
         val recipe = recipes[position]
         holder.recipeTitle.text = recipe.title
         holder.recipeDescription.text = recipe.description
-        // Usar una imagen placeholder predeterminada
-        holder.recipeImage.setImageResource(R.drawable.ic_launcher_foreground)
+
+        holder.recipeImage.setImageResource(R.drawable.healthy)
     }
 
     override fun getItemCount() = recipes.size
