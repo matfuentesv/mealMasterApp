@@ -13,8 +13,7 @@ object UserRepository {
     )
 
 
-    fun validateUser(email: String, password: String): Boolean {
-        return users.any { it.getEmail() ==email && it.getPassword() == password }
+    fun validateUser(email: String, password: String): Boolean { return users.any { it.getEmail() ==email && it.getPassword() == password }
     }
     fun createUser(user: User){
         users.add(user)

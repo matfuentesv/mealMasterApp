@@ -31,4 +31,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="16dp" />
 
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cerrar"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/login_btn_backgroud"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

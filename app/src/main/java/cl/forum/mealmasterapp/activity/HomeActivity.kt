@@ -1,6 +1,8 @@
 package cl.forum.mealmasterapp.activity
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -30,7 +32,14 @@ class HomeActivity : AppCompatActivity() {
         )
 
         val recyclerView = findViewById<RecyclerView>(R.id.recipesRecyclerView)
+        val closeButton = findViewById<Button>(R.id.closeButton)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = RecipeAdapter(recipes)
+
+
+        closeButton.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
