@@ -16,14 +16,19 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        // Lista de recetas con imágenes placeholder
         val recipes = listOf(
-            Recipe("Ensalada de Quinoa", "Una ensalada fresca y nutritiva.", R.drawable.ic_launcher_foreground),
-            Recipe("Pechuga de Pollo", "Pollo al horno con hierbas.", R.drawable.ic_launcher_foreground),
-            Recipe("Salmón a la Plancha", "Salmón con guarnición de vegetales.", R.drawable.ic_launcher_foreground),
-            Recipe("Tacos de Pescado", "Tacos saludables con pescado.", R.drawable.ic_launcher_foreground),
-            Recipe("Batido de Frutas", "Batido energético para el desayuno.", R.drawable.ic_launcher_foreground)
+            Recipe("Ensalada de Quinoa", "Una ensalada fresca y nutritiva con vegetales y semillas.", R.drawable.ic_launcher_foreground),
+            Recipe("Pechuga de Pollo al Limón", "Pollo al horno con hierbas y limón.", R.drawable.ic_launcher_foreground),
+            Recipe("Salmón a la Plancha", "Salmón con guarnición de vegetales y salsa de soja.", R.drawable.ic_launcher_foreground),
+            Recipe("Tacos de Pescado", "Tacos saludables con pescado y salsa de aguacate.", R.drawable.ic_launcher_foreground),
+            Recipe("Batido de Frutas", "Batido energético para el desayuno con plátano y fresas.", R.drawable.ic_launcher_foreground),
+            Recipe("Pizza Margarita", "Pizza clásica con tomate, mozzarella y albahaca fresca.", R.drawable.ic_launcher_foreground),
+            Recipe("Pasta Carbonara", "Pasta con salsa cremosa de huevo, queso y panceta.", R.drawable.ic_launcher_foreground),
+            Recipe("Hamburguesa Vegetariana", "Hamburguesa hecha con garbanzos y vegetales frescos.", R.drawable.ic_launcher_foreground),
+            Recipe("Sopa de Tomate", "Sopa casera de tomate con albahaca y un toque de crema.", R.drawable.ic_launcher_foreground),
+            Recipe("Brownies de Chocolate", "Brownies esponjosos con trozos de nuez y chocolate.", R.drawable.ic_launcher_foreground)
         )
+
 
         // Configurar la RecyclerView
         val recyclerView = findViewById<RecyclerView>(R.id.recipesRecyclerView)
